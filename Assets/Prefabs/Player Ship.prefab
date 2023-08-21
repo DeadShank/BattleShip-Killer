@@ -1696,6 +1696,7 @@ GameObject:
   - component: {fileID: 8315903161862154394}
   - component: {fileID: 7280524759420823672}
   - component: {fileID: 4240984028962660749}
+  - component: {fileID: 84178504256922976}
   m_Layer: 0
   m_Name: Player Ship
   m_TagString: Untagged
@@ -1781,6 +1782,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d1436434979af45a142841d8e9ae26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movement:
+    m_Name: Movement
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 8b62edc2-40ac-4ce5-982f-a36019d26dec
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: 97a08d93-783a-40c5-8886-2e23dddfb056
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 4
+    - m_Name: up
+      m_Id: cd0a3a2a-479a-4a22-a6ba-c90edc03c6e3
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 2bb106d0-5952-4c0a-b7bb-1b8d5cdd1c47
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: left
+      m_Id: c13c9200-191c-4f4c-bed8-02af459d5ccf
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 5b4494f4-8617-4a31-a720-a76bce1f0683
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: 
+      m_Id: 7dbd68bc-f572-4b98-88f4-688c75655a4e
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 0
+    m_Flags: 0
+  controlSpeed: 30
+--- !u!95 &84178504256922976
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6442559268206404270}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6819332877579828253
 GameObject:
   m_ObjectHideFlags: 0
